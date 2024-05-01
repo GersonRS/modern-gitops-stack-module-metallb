@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/GersonRS/modern-gitops-stack-module-metallb/compare/v2.4.0...v2.5.0) (2024-05-01)
+
+
+### 🚀 New Features
+
+* change chart update to include secrets ([72a39fd](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/72a39fd85141065f4f57b45656f185a9bae3c9b5))
+
 ## [2.4.0](https://github.com/GersonRS/modern-gitops-stack-module-metallb/compare/v2.3.0...v2.4.0) (2024-05-01)
 
 
