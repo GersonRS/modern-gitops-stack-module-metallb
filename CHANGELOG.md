@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.6.0](https://github.com/GersonRS/modern-gitops-stack-module-metallb/compare/v2.5.0...v2.6.0) (2025-01-18)
+
+
+### 🚀 New Features
+
+* **chart:** minor update of dependencies on metallb chart ([3ae05a1](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/3ae05a19b5657261e0c25971f3430b3a19abed66))
+
+
+### 🛠️ Build System
+
+* **deps:** bump camptocamp/helm-dependency-update-action ([545a5f9](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/545a5f924d9ff06bfaa4c1c86e2fe9ca13ae863f))
+* **deps:** bump peter-evans/create-pull-request from 6 to 7 ([41aedf4](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/41aedf4eafd3608b42f03c906f334212411e1def))
+
 ## [2.5.0](https://github.com/GersonRS/modern-gitops-stack-module-metallb/compare/v2.4.0...v2.5.0) (2024-05-01)
 
 
