@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.7.0](https://github.com/GersonRS/modern-gitops-stack-module-metallb/compare/v2.6.0...v2.7.0) (2025-01-22)
+
+
+### 🚀 New Features
+
+* **chart:** patch update of dependencies on metallb chart ([79e49b2](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/79e49b278479256882e2f2d5f4d621073572206e))
+
 ## [2.6.0](https://github.com/GersonRS/modern-gitops-stack-module-metallb/compare/v2.5.0...v2.6.0) (2025-01-18)
 
 
