@@ -50,7 +50,7 @@ data:
     #
     vtysh_enable=yes
     zebra_options="  -A 127.0.0.1 -s 90000000"
-    bgpd_options="   -A 127.0.0.1 -p 0"
+    bgpd_options="   -A 127.0.0.1 {{ if not .Values.frrk8s.frr.acceptIncomingBGPConnections }} -p 0 {{- end }}"
     ospfd_options="  -A 127.0.0.1"
     ospf6d_options=" -A ::1"
     ripd_options="   -A 127.0.0.1"
@@ -95,7 +95,7 @@ data:
   frr.conf: |+
     ! This file gets overriden the first time the speaker renders a config.
     ! So anything configured here is only temporary.
-    frr version 7.5.1
+    frr version 8.0
     frr defaults traditional
     hostname Router
     line vty
@@ -199,7 +199,6 @@ spec:
         {{- with .Values.frrk8s.logLevel }}
         - --log-level={{ . }}
         {{- end }}
-        - --health-probe-bind-address={{.Values.prometheus.metricsBindAddress}}:{{ .Values.frrk8s.healthPort }}
         {{- if .Values.frrk8s.alwaysBlock }}
         - --always-block={{ .Values.frrk8s.alwaysBlock }}
         {{- end }}
@@ -222,8 +221,8 @@ spec:
         {{- if .Values.frrk8s.livenessProbe.enabled }}
         livenessProbe:
           httpGet:
-            path: /healthz
-            port: {{ .Values.frrk8s.healthPort }}
+            path: /metrics
+            port: monitoring
             host: {{ .Values.prometheus.metricsBindAddress }}
           initialDelaySeconds: {{ .Values.frrk8s.livenessProbe.initialDelaySeconds }}
           periodSeconds: {{ .Values.frrk8s.livenessProbe.periodSeconds }}
@@ -234,8 +233,8 @@ spec:
         {{- if .Values.frrk8s.readinessProbe.enabled }}
         readinessProbe:
           httpGet:
-            path: /healthz
-            port: {{ .Values.frrk8s.healthPort }}
+            path: /metrics
+            port: monitoring
             host: {{ .Values.prometheus.metricsBindAddress }}
           initialDelaySeconds: {{ .Values.frrk8s.readinessProbe.initialDelaySeconds }}
           periodSeconds: {{ .Values.frrk8s.readinessProbe.periodSeconds }}
