@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.7.1](https://github.com/GersonRS/modern-gitops-stack-module-metallb/compare/v2.7.0...v2.7.1) (2025-02-08)
+
+
+### ⌨️ Code Refactoring
+
+* adjust workflows ([f026dd3](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/f026dd34c8ca817384f38cbb8258034277d9c32b))
+* try adjust code 5 ([079a680](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/079a680897cde17b9704599624f478cc79bccd9c))
+
 ## [2.7.0](https://github.com/GersonRS/modern-gitops-stack-module-metallb/compare/v2.6.0...v2.7.0) (2025-01-22)
 
 
