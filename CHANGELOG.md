@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.8.0](https://github.com/GersonRS/modern-gitops-stack-module-metallb/compare/v2.7.1...v2.8.0) (2026-01-22)
+
+
+### 🚀 New Features
+
+* update project ([cb48040](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/cb4804011641ae311b2d955654d168fab1933fb9))
+* update project ([e28ae19](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/e28ae19fdb5fb4e398423793e42c3e8a878413fb))
+
+
+### 🛠️ Build System
+
+* **deps:** bump actions/checkout from 4 to 6 ([acee120](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/acee1205bab639a82d49338564cd9f18eb0cffc0))
+* **deps:** bump actions/checkout from 4 to 6 ([a0afaba](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/a0afabac23dd941a5805e6a5cdcf575443353b01))
+* **deps:** bump peter-evans/create-pull-request from 7 to 8 ([8178622](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/8178622f4715828952fca330fd9d6360684c2dff))
+* **deps:** bump peter-evans/create-pull-request from 7 to 8 ([cda29d4](https://github.com/GersonRS/modern-gitops-stack-module-metallb/commit/cda29d4694154f15ada827a42824637cdc1dd2c8))
+
 ## [2.7.1](https://github.com/GersonRS/modern-gitops-stack-module-metallb/compare/v2.7.0...v2.7.1) (2025-02-08)
 
 
